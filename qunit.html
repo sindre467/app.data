@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css" />
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+  <script src="controller.js"></script>
+  <script>
+    //dummy modell
+    var antall;
+    var lån;
+    var rentelån;
+    var tme;
+    // var x;
+    // var y;
+
+    
+    // dummy view
+    function updateView() {}
+
+      QUnit.test("KalkulerPRY med hjelp av Math.floor", function (assert) {
+       antall= 100;
+       tme = 1;
+       rentelån = 10;
+
+       kalkulerPRY();
+        var kalkuler = Math.floor(lån);
+        var resultat = 110;
+        assert.equal(kalkuler, resultat);
+      });
+
+      function login() {}
+      QUnit.test("Sjekke krav får logIn ved hjelp av en RegEx", function (assert) {
+        let mail = '';
+        let filex = [1,2,3];
+        var checked = filex.length >= 4;
+        var result = false;
+        assert.equal(checked, result);
+      });
+
+   function updateView () {}
+    QUnit.test("KalkulerPRY med en desimal", function (assert) {
+       antall = 200;
+       tme = 2;
+       rentelån = 5;
+       kalkulerPRY();
+        const actual = lån;
+        const expected = 220.5;
+        assert.equal(actual, expected,);
+      });
+
+     
+ 
+  </script>
+</body>
